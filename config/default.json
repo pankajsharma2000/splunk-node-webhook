@@ -1,0 +1,18 @@
+{
+    "splunk": {
+      "admin": {
+        "username": "your_username",
+        "password": "password",
+        "scheme": "https",
+        "host": "localhost",
+        "port": "8089",
+        "version": "5.0"
+      },
+      "search": {
+        "query": "search index=_internal | head 10"
+      },
+      "webhook": {
+        "url": "http://webhook.site/4c3a0e98-7ea6-4ce9-a93c-c7ca7f84ada4"
+      }
+    }
+}
