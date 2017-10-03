@@ -1,7 +1,7 @@
 {
     "splunk": {
       "admin": {
-        "username": "your_username",
+        "username": "pankajsharma",
         "password": "password",
         "scheme": "https",
         "host": "localhost",
@@ -12,7 +12,7 @@
         "query": "search index=_internal | head 10"
       },
       "webhook": {
-        "url": "http://webhook.site/4c3a0e98-7ea6-4ce9-a93c-c7ca7f84ada4"
+        "url": "http://webhook.site/47183a35-2365-441d-879d-86d8b258533d"
       }
     }
 }

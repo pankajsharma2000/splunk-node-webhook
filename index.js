@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 var splunkjs = require('splunk-sdk');
 var request = require('request');
 var async = require("async");
@@ -35,7 +37,7 @@ service.apps().fetch(function(err, apps) {
 var jobs = service.jobs();
 service.login(function(err, success) {
     jobs.oneshotSearch(config.get('splunk.search.query'), {exec_mode: "blocking"}, function(err, results) {
-        //console.log(results); 
+        console.log(results); 
         request.post(config.get('splunk.webhook.url')).form(JSON.stringify(results));
         console.log("Results posted to webhook: "+ config.get('splunk.webhook.url')); 
         

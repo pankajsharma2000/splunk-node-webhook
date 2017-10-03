@@ -11,6 +11,10 @@ Setup:
 5. update config/default.json with your info
 6. run "node index.js"
 
+The runAScript.sh file needs to copied to: "$SPLUNK_HOME/bin/scripts". This is the file that you are going to add in your alert by choosing "Run a script" alert action. Also, please note the absolute path in runAScript.sh file to set "NODE_CONFIG_DIR" and to run "node" command.
+
+
+
 You can use webhook.site to test the post to webhooks.
 
 
